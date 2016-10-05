@@ -10,7 +10,7 @@ var qn = require('qn');
 var utils = require(path.join(process.env.GHOST_SOURCE, 'core/server/utils'));
 var BaseStore = require(path.join(process.env.GHOST_SOURCE,'core/server/storage/base'));
 var util = require('util');
-var getHash = require('./getHash');
+var getHash = require('./lib/getHash');
 
 function QiniuStore(config) {
   BaseStore.call(this);
